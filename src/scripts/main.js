@@ -1,6 +1,6 @@
 'use strict';
 
-const largeImg = document.querySelector('#largeImg');
+const imagesLarge = document.querySelector('#largeImg');
 const thumbs = document.querySelector('#thumbs');
 
 thumbs.addEventListener('click', function (e) {
@@ -12,6 +12,8 @@ thumbs.addEventListener('click', function (e) {
     return;
   }
 
-  largeImg.src = thumbnail.href;
-  largeImg.alt = thumbnail.title;
+  imagesLarge.src = thumbnail.href;
+  imagesLarge.alt = thumbnail.title;
 });
+
+
